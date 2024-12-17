@@ -1,0 +1,155 @@
+.order-page {
+    height: calc(100vh - 100px);
+    //background: linear-gradient(to right, rgb(0, 153, 255), rgb(0, 64, 184));
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 100px;
+    .order-header {
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .order-container {
+        height: 100%;
+        width: 100%;
+
+        .order-tab-list {
+            border-bottom: 1px solid  ;
+            .order-tab {
+                list-style: none;
+                display: inline-block;
+                margin: 0 10px -1px 0;
+
+                .a-link-normal {
+                    display: inline-block;
+                    padding: 5px 10px;
+                    border-bottom: 2px solid;
+                    border-color: transparent;
+                    &.selected {
+                        text-decoration: none;
+                        border-bottom: 2px solid;
+                        font-weight: 700;
+                        &:hover {
+                            cursor: auto;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .order-header-section{
+            width: 100%;
+            padding-left: 2.5%;
+            height: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            border-bottom: 1px solid ;
+            flex-direction: row;
+            font-weight: 600;
+            font-size: 15px;
+            .date{
+                display: inline-block;
+                width: 150px;
+                margin-right: 25px;
+            }
+            .details{
+                display: inline-block;
+                width: 500px;
+            }
+            .status{
+                display: inline-block;
+                width: 100px;
+            }
+        }
+
+        .order-list {
+            max-height: calc(100% - 100px);
+            width: 95%;
+            position: relative;
+            
+
+            margin: auto;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            .order-item {
+                display: flex;
+                padding: 5px 10px 5px 10px;
+                
+                justify-content: space-between;
+                margin-bottom: 10px;
+                font-size: 15px;
+                .left {
+                    display: flex;
+                    .date {
+                        width: 150px;
+                        margin-right: 25px;
+                        font-size: 14px;
+                    }
+                    .details{
+                        .price{
+                        }
+                        width: 500px;
+                    }
+                    .status{
+                        
+                        width: 100px;
+                    }
+                }
+
+                .right {
+                    overflow: auto;
+                    margin-right: 15px;
+
+                    .order-product {
+                        width: 100px;
+                    }
+                    a{
+                        color: black;
+                    }
+                    a.dark-theme{
+                        color:white;
+                    }
+                    a:visited{
+                        color: black;
+                        &:dark{
+                            color:white
+                        }
+                    }
+                    
+                    
+                    button {
+                        width: 100px;
+                        border: none;
+                        color: #fff;
+                        background-color: rgb(0, 89, 255);
+                        padding: 8px 10px;
+                        border-radius: 5px;
+                        font-size: 13px;
+                        cursor: pointer;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: rgb(58, 127, 255);
+                        }
+
+                        &.remove {
+                            background-color: rgb(196, 23, 0);
+
+                            &:hover {
+                                background-color: rgb(255, 60, 35);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

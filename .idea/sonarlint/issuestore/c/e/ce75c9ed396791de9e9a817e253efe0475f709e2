@@ -1,0 +1,14 @@
+
+X
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813,"BRemove this field injection and use constructor injection instead.(êæÄŞ
+p
+java:S1845O"ZRename method "GetProduct" to prevent any misunderstanding/clash with method "getProduct".(Ú¬œ±
+@	java:S106;"+Replace this use of System.out by a logger.(ÁÆ¢
+G
+java:S1602B",Remove useless curly braces around statement(—òÌëüÿÿÿÿ
+c	java:S100O"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¬œ±
+@	java:S106c"+Replace this use of System.out by a logger.(ú¿µ
